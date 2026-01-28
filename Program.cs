@@ -16,7 +16,7 @@ decimal konversijarak(decimal km)
 
 decimal konversimatauang(decimal idr, decimal rate = 10000)
 {
-    return idr * rate;
+    return idr / rate;
 }
 
 while (true)
@@ -59,7 +59,7 @@ while (true)
         Console.WriteLine("Nilai rate saat ini Rp 10000. Apakah Anda Ingin Mengubah Rate jik iya tekan 'Y' ");
         pilihan = Console.ReadLine();
 
-        
+
         if (pilihan.ToUpper() == "Y")
         {
             Console.Write("Rate Yang Di Inginkan: Rp");
